@@ -12,17 +12,21 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Jost",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  /* --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+   --heading-font: "Jost",  sans-serif; */
+   --default-font:"Avenir";
+  --heading-font: "Avenir";
+  /* --nav-font: "Poppins",  sans-serif; */
+  --nav-font: "Avenir";
+  --default-font: "Avenir"
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #4ba29d;/* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4ba29d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color:#217b63;/* Color for headings, subheadings and title throughout the website */
+  --accent-color: #217b63; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,7 +34,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color:#0b508e;/* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color:#98d4d3;/* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -45,7 +49,7 @@
 }
 
 .dark-background {
-  --background-color: #4ba29d;
+  --background-color: #217b63;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #ffffff;
@@ -85,6 +89,16 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+}
+
+#invisible-text{
+  display: none;
+}
+#invisible-text1{
+  display: none;
+}
+#more1,#more2,#more3,#more4,#more5,#more6,#more7,#more8,#more9,#more10,#more11,#more12,#more13,#more14,#more15,#more16,#more17,#more18,#more19,#more20,#more21,#more22,#more23{
+  display: none;
 }
 
 /* PHP Email Form Messages
@@ -143,7 +157,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --heading-color: #ffffff;
+  --heading-color: #217b63;;
   font-weight:900;
   color: var(--default-color);
   background-color: var(--heading-color);
@@ -209,9 +223,9 @@ h6 {
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
-  --background-color:#218769;;
-  --heading-color: #eff8f8;
-  --nav-color: #4ba29d;
+  --background-color:white;
+  --heading-color: #217b63;
+  --nav-color: white;
 }
 
 /* Index Page Header on Scroll
@@ -708,7 +722,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color:#98d4d3;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -816,7 +830,7 @@ section,
   position: relative;
 }
 
-.section-title h2:before {
+/* .section-title h2:before {
   content: "";
   position: absolute;
   display: block;
@@ -827,13 +841,36 @@ section,
   right: 0;
   bottom: 1px;
   margin: auto;
+} */
+.team .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--background-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
-
+.contact .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--background-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
+  width: 80px;
   height: 3px;
   background: var(--accent-color);
   left: 0;
@@ -974,7 +1011,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about ul {
+/* .about ul {
   list-style: none;
   padding: 0;
 }
@@ -989,15 +1026,16 @@ section,
   font-size: 20px;
   padding-right: 4px;
   color: var(--accent-color);
-}
+} */
 
-.about .read-more {
+ .read-more {
   color: var(--accent-color);
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 1px;
-  padding: 8px 28px;
+  margin-top: 13px;
+  /* letter-spacing: 1px; */
+  padding: 5px 5px;
   border-radius: 5px;
   transition: 0.3s;
   display: inline-flex;
@@ -1006,19 +1044,19 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-.about .read-more i {
+ .read-more i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
-}
+} 
 
-.about .read-more:hover {
+ .read-more:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
 }
 
-.about .read-more:hover i {
+ .read-more:hover i {
   transform: translate(5px, 0);
 }
 
@@ -1421,25 +1459,11 @@ section,
   transition: 0.5s;
   padding: 30px;
   height: 100%;
-}
-#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12{
-	display: none;
-   } 
+  }
+
+
    
-   .team .team-member .member-info .btn {
-    color: var(--accent-color);
-    /* background: var(--accent-color); */
-    border: 0;
-    padding: 5px 12px;
-    transition: 0.4s;
-    border-radius: 5px;
-    border: 2px solid  var(--accent-color);
-  }
-  
-  .team .team-member .member-info .btn:hover {
-    background: color-mix(in srgb, var(--accent-color), transparent 25%);
-    color: white;
-  }
+   
 @media (max-width: 468px) {
   .team .team-member {
     flex-direction: column;
@@ -1480,12 +1504,14 @@ section,
   font-size: 20px;
 }
 
-.team .team-member span {
-  display: block;
+.team .team-member .positions{
+  /* display: block; */
   font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
+  color:#58ab95;
+  /* font-weight:500; */
+  /* padding-bottom: 10px; 
+  position: relative; */
+  
 }
 
 /* .team .team-member span::after {
