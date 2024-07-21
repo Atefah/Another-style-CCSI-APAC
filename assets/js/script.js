@@ -210,44 +210,180 @@
       }
     }
 
-    
-    const readMoreLinks = document.querySelectorAll('.read-more-link');
-    const additionalContents = document.querySelectorAll('.additional-content');
-    // Add a click event listener to each "Read More" link
-    readMoreLinks.forEach((link, index) => {
-      link.addEventListener('click', (event) => {
-          event.preventDefault(); // Prevent the link from navigating to a new page
-    
-          // Toggle the visibility of the corresponding additional content
-          if (additionalContents[index].style.display === 'none' || additionalContents[index].style.display === '') {
-              additionalContents[index].style.display = 'block';
-              link.textContent = 'Read Less';
-          } else {
-              additionalContents[index].style.display = 'none';
-              link.textContent = 'Read More';
-          }
-      });
-    });
-  
+     //what we do section
 
-  document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-          document.getElementById('navbar_top').classList.add('fixed-top');
-         
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('.navbar').offsetHeight;
-          document.body.style.paddingTop = navbar_height + 'px';
-          document.getElementById('navbar_top').style.backgroundColor="#ffffff;";
-          // document.getElementById('link').style.color="black";
-          
-        } else {
-          document.getElementById('navbar_top').classList.remove('fixed-top');
-          document.getElementById('navbar_top').style.backgroundColor="#ffffff;";
-          // document.getElementById('link').style.color="white";
-         
-           // remove padding top from body
-          document.body.style.paddingTop = '0';
-        } 
-    });
-  }); 
+
+  //1
+ function myFunction13() {
+  var dots13 = document.getElementById("dots13");
+  var moreText13 = document.getElementById("more13");
+  var btnText13= document.getElementById("myBtn13");
+
+  if (dots13.style.display === "none") {
+    dots13.style.display = "inline";
+    btnText13.innerHTML = "Read more"; 
+    moreText13.style.display = "none";
+  } else {
+    dots13.style.display = "none";
+    btnText13.innerHTML = "Read less"; 
+    moreText13.style.display = "inline";
+  }
+}
+
+//2
+function myFunction14() {
+  var dots14 = document.getElementById("dots14");
+  var moreText14 = document.getElementById("more14");
+  var btnText14= document.getElementById("myBtn14");
+
+  if (dots14.style.display === "none") {
+    dots14.style.display = "inline";
+    btnText14.innerHTML = "Read more"; 
+    moreText14.style.display = "none";
+  } else {
+    dots14.style.display = "none";
+    btnText14.innerHTML = "Read less"; 
+    moreText14.style.display = "inline";
+  }
+}
+
+function myFunction15() {
+  var dots15 = document.getElementById("dots15");
+  var moreText15 = document.getElementById("more15");
+  var btnText15= document.getElementById("myBtn15");
+
+  if (dots15.style.display === "none") {
+    dots15.style.display = "inline";
+    btnText15.innerHTML = "Read more"; 
+    moreText15.style.display = "none";
+  } else {
+    dots15.style.display = "none";
+    btnText15.innerHTML = "Read less"; 
+    moreText15.style.display = "inline";
+  }
+}
+function myFunction16() {
+  var dots16 = document.getElementById("dots16");
+  var moreText16 = document.getElementById("more16");
+  var btnText16= document.getElementById("myBtn16");
+
+  if (dots16.style.display === "none") {
+    dots16.style.display = "inline";
+    btnText16.innerHTML = "Read more"; 
+    moreText16.style.display = "none";
+  } else {
+    dots16.style.display = "none";
+    btnText16.innerHTML = "Read less"; 
+    moreText16.style.display = "inline";
+  }
+}
+function myFunction17() {
+  var dots17 = document.getElementById("dots17");
+  var moreText17 = document.getElementById("more17");
+  var btnText17= document.getElementById("myBtn17");
+
+  if (dots17.style.display === "none") {
+    dots17.style.display = "inline";
+    btnText17.innerHTML = "Read more"; 
+    moreText17.style.display = "none";
+  } else {
+    dots17.style.display = "none";
+    btnText17.innerHTML = "Read less"; 
+    moreText17.style.display = "inline";
+  }
+}
+function myFunction18() {
+  var dots18 = document.getElementById("dots18");
+  var moreText18 = document.getElementById("more18");
+  var btnText18= document.getElementById("myBtn18");
+
+  if (dots18.style.display === "none") {
+    dots18.style.display = "inline";
+    btnText18.innerHTML = "Read more"; 
+    moreText18.style.display = "none";
+  } else {
+    dots18.style.display = "none";
+    btnText18.innerHTML = "Read less"; 
+    moreText18.style.display = "inline";
+  }
+}
+
+
+function myFunction19() {
+  var dots19 = document.getElementById("dots19");
+  var moreText19 = document.getElementById("more19");
+  var btnText19= document.getElementById("myBtn19");
+
+  if (dots19.style.display === "none") {
+    dots19.style.display = "inline";
+    btnText19.innerHTML = "Read more"; 
+    moreText19.style.display = "none";
+  } else {
+    dots19.style.display = "none";
+    btnText19.innerHTML = "Read less"; 
+    moreText19.style.display = "inline";
+  }
+}
+function myFunction20() {
+  var dots20 = document.getElementById("dots20");
+  var moreText20 = document.getElementById("more20");
+  var btnText20= document.getElementById("myBtn20");
+
+  if (dots20.style.display === "none") {
+    dots20.style.display = "inline";
+    btnText20.innerHTML = "Read more"; 
+    moreText20.style.display = "none";
+  } else {
+    dots20.style.display = "none";
+    btnText20.innerHTML = "Read less"; 
+    moreText20.style.display = "inline";
+  }
+}
+
+function myFunction21() {
+  var dots21 = document.getElementById("dots21");
+  var moreText21 = document.getElementById("more21");
+  var btnText21= document.getElementById("myBtn21");
+
+  if (dots21.style.display === "none") {
+    dots21.style.display = "inline";
+    btnText21.innerHTML = "Read more"; 
+    moreText21.style.display = "none";
+  } else {
+    dots21.style.display = "none";
+    btnText21.innerHTML = "Read less"; 
+    moreText21.style.display = "inline";
+  }
+}
+
+function myFunction22() {
+  var dots22 = document.getElementById("dots22");
+  var moreText22 = document.getElementById("more22");
+  var btnText22= document.getElementById("myBtn22");
+
+  if (dots22.style.display === "none") {
+    dots22.style.display = "inline";
+    btnText22.innerHTML = "Read more"; 
+    moreText22.style.display = "none";
+  } else {
+    dots22.style.display = "none";
+    btnText22.innerHTML = "Read less"; 
+    moreText22.style.display = "inline";
+  }
+}
+
+function myFunction23() {
+  var dots23 = document.getElementById("dots23");
+  var moreText23 = document.getElementById("more23");
+  var btnText23= document.getElementById("myBtn23");
+
+  if (dots23.style.display === "none") {
+    dots23.style.display = "inline";
+    btnText23.innerHTML = "Read more"; 
+    moreText23.style.display = "none";
+  } else {
+    dots23.style.display = "none";
+    btnText23.innerHTML = "Read less"; 
+    moreText23.style.display = "inline";
+  }
+}
