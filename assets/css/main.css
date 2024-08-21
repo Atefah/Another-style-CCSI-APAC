@@ -1,4 +1,15 @@
+/**
+* Template Name: Arsha
+* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
 /* Fonts */
 :root {
   /* --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
@@ -166,17 +177,17 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 120px;
+  max-height: 130px;
   margin-right: 8px;
 }
 
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 800;
   color: var(--heading-color);
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .header .btn-getstarted,
@@ -233,6 +244,10 @@ h6 {
   font-size: larger;
 }
 
+.navmenu ul li a{
+  font-size: 20px;
+  /* font-weight: bold; */
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -241,6 +256,7 @@ h6 {
   .navmenu {
     padding: 0;
   }
+ 
 
   .navmenu ul {
     margin: 0;
@@ -428,7 +444,7 @@ h6 {
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -461,6 +477,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
+    font-weight: 900;
   }
 
   .navmenu .active i,
@@ -653,7 +670,7 @@ h6 {
   color: var(--heading-color);
   font-size: 28px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: var(--heading-font);
 }
 
@@ -825,7 +842,7 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   position: relative;
 }
 
@@ -1206,7 +1223,7 @@ section,
   color: var(--default-color);
   padding: 0;
   margin: 0 0 6px 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: block;
   font-weight: 600;
   font-family: var(--heading-font);
